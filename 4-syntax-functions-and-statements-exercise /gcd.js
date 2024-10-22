@@ -1,7 +1,12 @@
-function greatestCommonDivisor(a, b) {
-  if (a === 0 || b === 0) {
-    return a + b;
-  }
+function GCD(a, b) {
+  let gcd = a % b;
 
-  return greatestCommonDivisor(b, a % b);
+  while (gcd !== 0) {
+    a = b;
+    b = gcd;
+    gcd = a % b;
+  }
+  console.log(b);
 }
+
+gcd(15, 5);
