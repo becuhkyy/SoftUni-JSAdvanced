@@ -1,7 +1,5 @@
 function printArrayWithADelimiter(inputArr, delimiter) {
-  const newInput = [...inputArr];
-  const del = newInput.pop();
-  console.log(newInput);
+  console.log(newInput.join(delimiter));
 }
 
 printArrayWithADelimiter(["One", "Two", "Three", "Four", "Five"], "-");

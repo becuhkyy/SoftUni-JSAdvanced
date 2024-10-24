@@ -1,5 +1,4 @@
-function printEveryNthElement(inputArr) {
-  const step = inputArr.pop();
+function printEveryNthElement(inputArr, step) {
   const newArr = [];
   for (let i = 0; i < inputArr.length; i += step) {
     newArr.push(inputArr[i]);

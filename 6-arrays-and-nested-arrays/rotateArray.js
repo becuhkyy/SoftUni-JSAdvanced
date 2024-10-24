@@ -1,6 +1,5 @@
-function rotateArray(inputArr) {
+function rotateArray(inputArr, rotations) {
   const arr = Array.from(inputArr);
-  const rotations = arr.pop();
 
   for (let i = 0; i < rotations; i++) {
     const el = arr.pop();
